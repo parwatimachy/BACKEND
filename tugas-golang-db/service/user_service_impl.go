@@ -35,7 +35,7 @@ func (userService UserServiceImpl) CreateUser(ctx context.Context, userModel mod
 
 	uuidUser := uuid.New().String()
 
-	theRole, err := userService.RoleRepository.FindMstRole(ctx, "ROLE002")
+	theRole, err := userService.RoleRepository.FindMstRole(ctx, "ROLE001")
 	if err != nil {
 		panic(err)
 	}
